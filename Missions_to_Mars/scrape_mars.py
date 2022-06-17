@@ -78,7 +78,7 @@ def scrape():
 
     # use the pd.read_html() method to scrape any tabular data from the page
     table = pd.read_html(url)
-    table
+    
 
     # Place the data from the scrape into a dataframe and display results to make sure we have the data we need
     df = table[0]
@@ -154,8 +154,7 @@ def scrape():
     browser.quit()
 
     # Return the results from the scrape function
-    print(mars_data)
+    
     return mars_data
 
-scrape()
 
