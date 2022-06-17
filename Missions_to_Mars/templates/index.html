@@ -10,22 +10,18 @@
 </head>
 
 <body>
-  <div class="container">
-
+  <div class="container-fluid">
     <div class="jumbotron text-center">
-      <h1>Mars Data</h1>
-      <p><a class="btn btn-primary btn-lg" href="/scrape" role="button">Get Mars Data</a></p>
+      <h1>Mission to Mars</h1>
+      <p><a class="btn btn-primary btn-lg" href="/scrape" role="button">Scrape New Data</a></p>
     </div>
+    
+    <h2>Latest Mars News:</h2>
+    <h3>News Title: {{mars.news_title }}</h3>
+    <h3>News Paragraph: {{mars.news_p }}</h3>
+    <img src="{{ mars.featured_image_url }}" alt="Mars_img">
 
-    <!-- Phone Listings -->
-    <div class="row" id="craiglist-listings">
-      <div class="col-md-12">
-        <h4 class="heading">{{mars.news_title}} {{mars.news_p}}</h4>
-        <img src="featured_image_url" alt="">
-      
-      </div>
-    </div>
-
+  </div>
   </div>
 </body>
 
