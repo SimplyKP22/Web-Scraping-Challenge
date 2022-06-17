@@ -29,7 +29,7 @@ def scrape():
     mars_data = scrape_mars.scrape()
 
     # update our listings with the data that is being scraped.
-    mars.insert_one(mars_data)
+    mars.update_one({}, {"$set": mars_data}, upsert=True)
 
     # Redirect back to home page
     return redirect("/")
