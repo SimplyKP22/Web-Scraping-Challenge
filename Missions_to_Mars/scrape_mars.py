@@ -154,7 +154,8 @@ def scrape():
     browser.quit()
 
     # Return the results from the scrape function
+    print(mars_data)
     return mars_data
 
-
+scrape()
 
