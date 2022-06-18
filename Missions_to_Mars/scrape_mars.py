@@ -136,7 +136,7 @@ def scrape():
             href = anchor.get('href')
             cover_div = soup.find('div', class_='cover')
             title = cover_div.h2.text
-            img = url + link + href
+            img = url + href
             if {"title": title, "img_url": img} not in hemisphere_image_urls:
                 hemisphere_image_urls.append({"title": title, "img_url": img})
         except:
